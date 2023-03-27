@@ -19,16 +19,18 @@ http://127.0.0.1:4000/
 
 ## Learn to use markdown
 
-For details use the github wiki
+For details use the [GitHub wiki for markdown](https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+).
+### How do add pictures
 
-https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github
-
-### How do add pictures?
-
-Add pictures with
-
-```mardkown
-![description](_site/assets/img/picture.png "The text, which appears while hovering over the picture (optional)")
+```markdown
+![description](_site/assets/img/picture.png "Hovertext (optional)")
 ```
 
-![radar](/assets/img/Avatar_1.png "Test")
+![radar](/assets/img/Avatar_1.png "Hovertext (optional)")
+_Image Caption_
+
+### How to add links
+```markdown
+[displayed text](URL)
+```
