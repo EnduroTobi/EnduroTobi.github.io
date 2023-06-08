@@ -48,9 +48,26 @@ _Image Caption_
 [displayed text](URL)
 ```
 
+### How to add a table
+
+```markdown
+| Header 1 | Header 2 |
+| :------- | :------- |
+| 1        | 2        |
+| 3        | 4        |
+| 5        | 6        |
+```
+
+| Header 1 | Header 2 |
+| :------- | :------- |
+| 1        | 2        |
+| 3        | 4        |
+| 5        | 6        |
+
 ### How to add Check Boxes
- 
- This feature only works with Github
+
+This feature only works with Github
+
 ```markdown
 - [ ] unchecked box
 - [x] unchecked box

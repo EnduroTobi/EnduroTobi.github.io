@@ -7,7 +7,8 @@ mermaid: true
 ```mermaid
 flowchart TD
     subgraph Basics [ ]
-    B(Basics) --> B1(Git)
+    B(Basics) --> B1(Command Line)
+    B --> B4(Git)
     B --> B2(Wiki)
     B --> B3(Web Presence)
     B2 --> B21(Github Pages)
