@@ -20,6 +20,7 @@ The command line is a way to interact directly with the operating system of the 
 | ls -t                                | List all content by the time hey were last modified                                                                                                        |
 | ls -alt                              | Combines all attributes                                                                                                                                    |
 | pwd                                  | "print working directory" - outputs the current directory                                                                                                  |
+| ~                                    | Home directory                                                                                                                                             |
 | cd /home/user/                       | Change directory to /home/user/                                                                                                                            |
 | cd ..                                | Chnage directory by moving up in the hirachy                                                                                                               |
 | cd ../..                             | Move up to directories                                                                                                                                     |
@@ -49,3 +50,18 @@ The command line is a way to interact directly with the operating system of the 
 | grep -Rl Potter /books/fantasy       | Searches the content of the directory for "Potter" <br /> _-R_ : searches recursive <br />_-l_ : lists only the file names and not the lines               |
 | sed s/Ron/Harry/ harrypotter.txt     | Replaces the first instance of "Ron" in a line with "Harry". <br />It does not change the file itself.                                                     |
 | sed -i s/Ron/Harry/g harrypotter.txt | Replaces the all instances of "Ron" in a line <br /> with "Harry" and saves the file.                                                                      |
+| nana hello.txt                       | Opens the text application nano                                                                                                                            |
+| history                              | Shows the previous entered commands                                                                                                                        |
+| echo $HOME                           | Displays the variable _HOME_                                                                                                                               |
+| env                                  | Returns the environment variables                                                                                                                          |
+| export VARIABLENAME="variable value" | Define a global variable                                                                                                                                   |
+
+## Aliases
+
+Open _.bash_profile_ or .zshrc (if you use Zsh) with nano and create some shortcuts.
+
+```bash
+alias pd="pwd"
+```
+
+This will show you the current directory with the command _pd_ as well as with _pwd_.
