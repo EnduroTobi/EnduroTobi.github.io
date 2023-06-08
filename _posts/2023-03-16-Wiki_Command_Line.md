@@ -29,7 +29,7 @@ The command line is a way to interact directly with the operating system of the 
 | touch hello.txt                      | Create a new file                                                                                                                                          |
 | echo Hello                           | displays _Hello_                                                                                                                                           |
 | echo "Hello World!" >> hello.txt     | Create a new file with the content "Hello world!"                                                                                                          |
-| cat "hello.txt                       | Prints the content of hello.txt                                                                                                                            |
+| cat "hello.txt                       | Prints the content of hello.txt <br />cat only uses files as an input                                                                                      |
 | cat hello.txt > world.txt            | Overwrites content of hello.txt into world.txt                                                                                                             |
 | cat hello.txt >> world.txt           | Appends content of hello.txt into world.txt                                                                                                                |
 | cp hello.txt hello.bak               | Copies hello.txt to a new file named hello.bak                                                                                                             |
@@ -47,5 +47,5 @@ The command line is a way to interact directly with the operating system of the 
 | sort names.txt \| uniq               | Better way to filter duplicates                                                                                                                            |
 | grep Harry names.txt                 | Searches for a string "Harry" in _names.txt_ <br />Note that grep is case sensitive.<br /> It can be made insensitive with the argument _-i_               |
 | grep -Rl Potter /books/fantasy       | Searches the content of the directory for "Potter" <br /> _-R_ : searches recursive <br />_-l_ : lists only the file names and not the lines               |
-| sed s/Ron/Harry/ harrypotter.txt     | replace the first instance of "Ron" in a line with "Harry". It does not change the file itself.                                                            |
-| sed -i s/Ron/Harry/g harrypotter.txt | replace the all instances of "Ron" in a line with "Harry" and saves the file.                                                                              |
+| sed s/Ron/Harry/ harrypotter.txt     | Replaces the first instance of "Ron" in a line with "Harry". <br />It does not change the file itself.                                                     |
+| sed -i s/Ron/Harry/g harrypotter.txt | Replaces the all instances of "Ron" in a line <br /> with "Harry" and saves the file.                                                                      |

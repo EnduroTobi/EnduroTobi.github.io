@@ -136,7 +136,7 @@ _Image Caption_
 | :-------- | :----------- |
 | Tommy     | Programming  |
 | Lucas     | Martial Arts |
-| Chrsitian | Photography  |
+| Christian | Photography  |
 
 ### How to add Check Boxes
 
