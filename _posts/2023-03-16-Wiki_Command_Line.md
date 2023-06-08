@@ -22,7 +22,7 @@ The command line is a way to interact directly with the operating system of the 
 | pwd                                  | "print working directory" - outputs the current directory                                                                                                  |
 | ~                                    | Home directory                                                                                                                                             |
 | cd /home/user/                       | Change directory to /home/user/                                                                                                                            |
-| cd ..                                | Chnage directory by moving up in the hirachy                                                                                                               |
+| cd ..                                | Change directory by moving up in the hirachy                                                                                                               |
 | cd ../..                             | Move up to directories                                                                                                                                     |
 | cd ../user                           | Move one directory up and one down                                                                                                                         |
 | mkdir assets                         | Create a directory called "assets"                                                                                                                         |
