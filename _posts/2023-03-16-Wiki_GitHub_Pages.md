@@ -5,8 +5,6 @@ categories: [Wiki, Web]
 tags: [github, website, portfolio]
 ---
 
-# Github Pages
-
 ## Setup a Github Repo using Jekyll using a Chirpy theme
 
 Follow the instructions on the [Chirpy Github Page](https://chirpy.cotes.page/posts/getting-started/).
@@ -33,6 +31,82 @@ If you want to add or substract a social media tag in the lower left corner, mod
 
 For details use the [GitHub wiki for markdown](https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
+### Emphasise
+
+```markdown
+**Bold Text**
+```
+
+**Bold Text**
+
+```markdown
+_Italic Text_
+```
+
+_Italic Text_
+
+```markdown
+~~Strikethrough~~
+```
+
+~~Strikethrough~~
+
+### Description list
+
+```markdown
+Arduino
+: a small microcontroller
+
+Raspberry Pi
+: a small computer running on a linux based OS
+```
+
+Arduino
+: a small microcontroller
+
+Raspberry Pi
+: a small computer running on a linux based OS
+
+### Block Quote
+
+> This is a Block Quote.
+
+### Prompts
+
+```markdown
+{: .prompt-tip }
+
+> Type `tip` prompt.
+
+{: .prompt-info }
+
+> Type`info` prompt.
+
+{: .prompt-warning }
+
+> Type `warning` prompt.
+
+{: .prompt-danger }
+
+> Type `danger` prompt.
+```
+
+{: .prompt-tip }
+
+> Type `tip` prompt.
+
+{: .prompt-info }
+
+> Type`info` prompt.
+
+{: .prompt-warning }
+
+> Type `warning` prompt.
+
+{: .prompt-danger }
+
+> Type `danger` prompt.
+
 ### How do add pictures
 
 ```markdown
@@ -51,18 +125,18 @@ _Image Caption_
 ### How to add a table
 
 ```markdown
-| Header 1 | Header 2 |
-| :------- | :------- |
-| 1        | 2        |
-| 3        | 4        |
-| 5        | 6        |
+| Name      | Hobby        |
+| :-------- | :----------- |
+| Tommy     | Programming  |
+| Lucas     | Martial Arts |
+| Chrsitian | Photography  |
 ```
 
-| Header 1 | Header 2 |
-| :------- | :------- |
-| 1        | 2        |
-| 3        | 4        |
-| 5        | 6        |
+| Name      | Hobby        |
+| :-------- | :----------- |
+| Tommy     | Programming  |
+| Lucas     | Martial Arts |
+| Chrsitian | Photography  |
 
 ### How to add Check Boxes
 
