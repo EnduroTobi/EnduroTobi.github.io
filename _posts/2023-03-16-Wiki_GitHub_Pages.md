@@ -122,6 +122,7 @@ _Image Caption_
 [displayed text](URL)
 ```
 
+
 ### How to add a table
 
 ```markdown
