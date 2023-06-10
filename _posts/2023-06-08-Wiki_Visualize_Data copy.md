@@ -24,6 +24,18 @@ There are three popular data formats to store data
 ```
 
 ## Data Visulazing Libraries
-Matplotlib
+### Matplotlib
+> Insert Matplotlib Cheat Sheet (links?)
 
-Seaborn
+[Matplotlib Pyplot Documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot)
+### Seaborn
+> Insert Seaborn Cheat Sheet (links?)
+## Tips for data visualization
+### Basic Line Plot
+```python
+plt.plot(x,y)
+```
+> Insert image of basic line plot
+
+Pros:
+- good for visualizing data against time
