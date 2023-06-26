@@ -31,8 +31,6 @@ There are three popular data formats to store data
 
 [Matplotlib Pyplot Documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot)
 
-### Seaborn
-
 > Insert Seaborn Cheat Sheet (links?)
 
 ## Tips for data visualization
@@ -121,3 +119,25 @@ plt.savefig('savedfigure.png')
 2. fill between line plot
 3. box plot
 4. violin plot
+
+### Seaborn
+
+Seaborn is based on Matplotlib and offers some good extensions.
+
+1. More appealing plotting style
+2. Easier to use with Pandas
+3. Easily plots aggregates of a DataFrame
+
+#### Bar Plot
+
+sns.barplot(data=df,x='column_1',y='column_2')
+
+activate standard deviation
+>ci='sd'
+
+Use different aggregates
+>estimator=np.median <br />
+estimator=len
+
+Add nested categorical variable to the plot
+>hue='column_3'
