@@ -133,11 +133,37 @@ Seaborn is based on Matplotlib and offers some good extensions.
 sns.barplot(data=df,x='column_1',y='column_2')
 
 activate standard deviation
->ci='sd'
+
+> ci='sd'
 
 Use different aggregates
->estimator=np.median <br />
-estimator=len
+
+> estimator=np.median <br />
+> estimator=len
 
 Add nested categorical variable to the plot
->hue='column_3'
+
+> hue='column_3'
+
+#### KDE Plot
+
+KDE plots are superior to histograms, because it eliminates the bin size and thus misinterpretations by choosing a non ideal bin size.
+
+sns.kdeplot(dataset1, shade=True)
+
+sns.kdeplot(dataset2, shade=True)
+
+KDE plot receive just on simple dataset. A dataset with multiple columns does not work.
+
+#### Box Plot
+
+sns.boxplot(data=df,x='column_1','column_2')
+
+#### Violin Plot
+sns.violinplot(data=df,x='column_1','column_2')
+
+#### Shapes of dataset distribution
+
+1. skewed (shifted towards one value)
+2. normally
+3. bimodal (two peaks)
