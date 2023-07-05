@@ -122,6 +122,8 @@ plt.savefig('savedfigure.png')
 
 ### Seaborn
 
+https://seaborn.pydata.org/tutorial/color_palettes.html?highlight=color
+
 Seaborn is based on Matplotlib and offers some good extensions.
 
 1. More appealing plotting style
@@ -160,6 +162,7 @@ KDE plot receive just on simple dataset. A dataset with multiple columns does no
 sns.boxplot(data=df,x='column_1','column_2')
 
 #### Violin Plot
+
 sns.violinplot(data=df,x='column_1','column_2')
 
 #### Shapes of dataset distribution
@@ -167,3 +170,64 @@ sns.violinplot(data=df,x='column_1','column_2')
 1. skewed (shifted towards one value)
 2. normally
 3. bimodal (two peaks)
+
+#### Styling
+
+Built in style themes
+
+> sns.set_style("darkgrid")
+
+darkgrid, whitegrid, dark, white, and ticks
+
+Remove spines (top and right)
+
+> sns.despine()
+
+or for individual spines
+
+> sns.despine(left=True, bottom=True)
+
+Scaling the plot
+
+> sns.set_context("paper")
+
+paper, notebook, talk, and poster
+
+set the scale, font size and line width
+
+> sns.set_context("poster", font_scale = .5, rc={"grid.linewidth": 0.6})
+
+rc stand for run coomand and it allows to change all attributes that can easily be printed by
+
+> sns.plotting_context()
+
+Coloring
+
+Use color palettes
+
+Save a palette to a variable:
+
+> palette = sns.color_palette("bright")
+
+Use palplot and pass in the variable:
+
+> sns.palplot(palette)
+
+There are following standard palettes
+
+deep, muted, pastel, bright, dark, and colorblind.
+
+It is also possible to use Color Brewer (http://colorbrewer2.org)
+>custom_palette = sns.color_palette("Paired", 9)
+Use Seaborn styling for Matplotlib plots
+
+Use Qualitative Palettes for Categorical Datasets
+(e.g. Harry, Ron, Hermoine)
+
+Sequential Palettes go from a light color to a darker color. This is useful for variables in an ordered list (e.g Points scored in Quiddich)
+
+https://seaborn.pydata.org/tutorial/color_palettes.html?highlight=color
+
+Use Diverging Palettes are good for indicating both exremes, e.g. Temperature
+> sns.set()
+
