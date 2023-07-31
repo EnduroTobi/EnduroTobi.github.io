@@ -1,5 +1,5 @@
 ---
-title: Python Basics
+title: Pandas Basics
 date: 2023-06-18 12:50:00 +0100
 categories: [Wiki, Basics]
 tags: [python, pandas, data, basics]
@@ -36,10 +36,10 @@ df = pd.DataFrame([
 )
 ```
 
-### Imprt CSV
+### Import CSV
 
 ```python
-pd.read_csv('Harry_Potter_Stats.csv')
+df = pd.read_csv('Harry_Potter_Stats.csv')
 #or
 df.to_csv('Harry_Potter_Stats.csv')
 ```

@@ -143,6 +143,12 @@ Use different aggregates
 > estimator=np.median <br />
 > estimator=len
 
+Examples of estimators: np.median, np.mean, len, sum, max, min.
+
+Or use an own function with lambda
+
+estimator=lambda x: sum(xi\*xi for xi in x)
+
 Add nested categorical variable to the plot
 
 > hue='column_3'
@@ -207,19 +213,20 @@ Use color palettes
 
 Save a palette to a variable:
 
-> palette = sns.color_palette("bright")
+> sns.set_palette("bright")
 
-Use palplot and pass in the variable:
+To visualize the colorpalette use:
 
-> sns.palplot(palette)
+> sns.palplot(sns.color_palette("bright"))
 
 There are following standard palettes
 
 deep, muted, pastel, bright, dark, and colorblind.
 
 It is also possible to use Color Brewer (http://colorbrewer2.org)
->custom_palette = sns.color_palette("Paired", 9)
-Use Seaborn styling for Matplotlib plots
+
+> custom_palette = sns.color_palette("Paired", 9)
+> Use Seaborn styling for Matplotlib plots
 
 Use Qualitative Palettes for Categorical Datasets
 (e.g. Harry, Ron, Hermoine)
@@ -229,5 +236,5 @@ Sequential Palettes go from a light color to a darker color. This is useful for 
 https://seaborn.pydata.org/tutorial/color_palettes.html?highlight=color
 
 Use Diverging Palettes are good for indicating both exremes, e.g. Temperature
-> sns.set()
 
+> sns.set()
