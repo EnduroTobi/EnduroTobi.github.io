@@ -1,6 +1,6 @@
 ---
 title: Visualize Data
-date: 2023-06-08 19:50:00 +0100
+date: 2023-08-06 16:00:00 +0100
 categories: [Wiki, Basics]
 tags: [python, data visualization, data, data format, charts, graphs, basics]
 ---
@@ -9,31 +9,33 @@ tags: [python, data visualization, data, data format, charts, graphs, basics]
 
 There are three popular data formats to store data
 
-**Python List**
+### Python Lists
 
-: ```python
+```python
 ['Harry','Ron','Hermione']
-
 ```
 
-**CSV data**
-: **C**omma **S**eparated **V**alues - an Excel like spreadsheet
+### CSV data
 
-**Pandas Dataframe**
-: more about dataframes
+**C**omma **S**eparated **V**alues - an Excel like spreadsheet
+
+### Pandas Dataframe
+
+```python
+df = pd.DataFrame({
+    'Character': ['Harry','Draco','Hermione'],
+    'House': ['Gryffindor','Slytherin','Gryffindor']
+    'Schoolyear': [1,1,1]
+})
 ```
 
-## Data Visulazing Libraries
+More about dataframes can be read in this [post]({% link _posts/2023-06-18-Wiki_Pandas.md %}).
 
-### Matplotlib
+## Matplotlib
 
-> Insert Matplotlib Cheat Sheet (links?)
+[Matplotlib Cheat Sheets](https://matplotlib.org/cheatsheets/)
 
 [Matplotlib Pyplot Documentation](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot)
-
-> Insert Seaborn Cheat Sheet (links?)
-
-## Tips for data visualization
 
 ### Basic Line Plot
 
@@ -41,7 +43,11 @@ There are three popular data formats to store data
 plt.plot(x,y)
 ```
 
+{::comment}
+
 > Insert image of basic line plot
+
+{:/comment}
 
 Pros:
 
@@ -68,7 +74,7 @@ How to display two datasets next to each other
 > w = 0.8 # Width of each bar (0.8 default)<br />
 > x1_values = [t \* element + w \* n for element in range(d)]
 
-#### stacked bar plots
+### Stacked bar plots
 
 Good use for e.g. an overview of a budget. You can compare the several individual categories as well as the overall budget
 
@@ -82,19 +88,19 @@ x3_bottom = np.add(x1,x2)
 plt.bar(x3,bottom=x3_bottom)
 ```
 
-#### Histrogram
+### Histrogram
 
 ```python
 plt.hist(x,bins=5,density=True,histtype='step',linewidth=2)
 ```
 
-#### Pie Chart
+### Pie Chart
 
 plt.pie([2,45,32,8,51],labels=['A','B','C','D','E'],autopct='%1d%%)
 
 plt.axis('equal')
 
-#### Visuals
+### Visuals
 
 ax = plt.subplot()
 
@@ -108,7 +114,7 @@ ax.set_xticklabels(['A','B','C'])
 
 plt.legend(['A','B'])
 
-#### Misc
+### Misc
 
 plt.figure(figsize=(10,8))
 plt.savefig('savedfigure.png')
@@ -120,7 +126,9 @@ plt.savefig('savedfigure.png')
 3. box plot
 4. violin plot
 
-### Seaborn
+## Seaborn
+
+Official Seaborn [docu](https://seaborn.pydata.org) with an [introduction to the supported functions](https://seaborn.pydata.org/tutorial/function_overview.html).
 
 https://seaborn.pydata.org/tutorial/color_palettes.html?highlight=color
 
@@ -130,7 +138,7 @@ Seaborn is based on Matplotlib and offers some good extensions.
 2. Easier to use with Pandas
 3. Easily plots aggregates of a DataFrame
 
-#### Bar Plot
+### Bar Plot
 
 sns.barplot(data=df,x='column_1',y='column_2')
 
@@ -153,7 +161,7 @@ Add nested categorical variable to the plot
 
 > hue='column_3'
 
-#### KDE Plot
+### KDE Plot
 
 KDE plots are superior to histograms, because it eliminates the bin size and thus misinterpretations by choosing a non ideal bin size.
 
@@ -163,21 +171,22 @@ sns.kdeplot(dataset2, shade=True)
 
 KDE plot receive just on simple dataset. A dataset with multiple columns does not work.
 
-#### Box Plot
+### Box Plot
 
 sns.boxplot(data=df,x='column_1','column_2')
 
-#### Violin Plot
+### Violin Plot
 
 sns.violinplot(data=df,x='column_1','column_2')
 
-#### Shapes of dataset distribution
+### Shapes of dataset distribution
 
-1. skewed (shifted towards one value)
-2. normally
-3. bimodal (two peaks)
+1. discrete
+2. skewed (shifted towards one value)
+3. normally
+4. bimodal (two peaks)
 
-#### Styling
+### Styling
 
 Built in style themes
 

@@ -51,6 +51,16 @@ _Italic Text_
 
 ~~Strikethrough~~
 
+### Comments
+
+```markdown
+{::comment}
+
+a comment
+
+{:/comment}
+```
+
 ### Description list
 
 ```markdown
@@ -124,6 +134,13 @@ _Image Caption_
 
 ```markdown
 [displayed text](URL)
+```
+
+Or use a link within your GitHub pages.
+
+```
+Use this for the link
+% link _posts/post.md %
 ```
 
 ### How to add a table
