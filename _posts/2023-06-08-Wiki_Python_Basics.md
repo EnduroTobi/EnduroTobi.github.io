@@ -6,3 +6,4 @@ tags: [python, basics]
 ---
 
 
+## Randomize

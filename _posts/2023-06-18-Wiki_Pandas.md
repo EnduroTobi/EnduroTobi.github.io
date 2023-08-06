@@ -107,11 +107,15 @@ will add the changes to the existing dataframe. With False, a new dataframe will
 print(df.head())
 ```
 
+```python
 print(df.info())
+```
 
 Reset the index of Sub-Dataframes
 
+```python
 df.reset_index(drop=True,inplace=True)
+```
 
 ```python
 
@@ -119,4 +123,14 @@ df.reset_index(drop=True,inplace=True)
 
 Apply functions to a column
 
+```python
 df['Column 1'] = df['column 2'].apply(function)
+```
+
+Get a random sample
+
+```python
+df.sample()
+# or use it for one specific column
+df['column_1'].sample()
+```
