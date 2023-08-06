@@ -19,7 +19,7 @@ You can access the page on [http://127.0.0.1:4000/](http://127.0.0.1:4000/).
 
 ## Create your first blog post
 
-Puplish your first blog post by creating a new markdown file in your /\_posts/ directory. For more info check the [official docu](https://chirpy.cotes.page/posts/write-a-new-post/).
+Puplish your first blog post by creating a new markdown file in your _/\_posts/_ directory. For more info check the [official docu](https://chirpy.cotes.page/posts/write-a-new-post/).
 
 ## Modify settings
 
@@ -51,6 +51,16 @@ _Italic Text_
 
 ~~Strikethrough~~
 
+### Comments
+
+```markdown
+{::comment}
+
+a comment
+
+{:/comment}
+```
+
 ### Description list
 
 ```markdown
@@ -68,6 +78,10 @@ Raspberry Pi
 : a small computer running on a linux based OS
 
 ### Block Quote
+
+```markdown
+> This is a Block Quote.
+```
 
 > This is a Block Quote.
 
@@ -120,6 +134,13 @@ _Image Caption_
 
 ```markdown
 [displayed text](URL)
+```
+
+Or use a link within your GitHub pages.
+
+```
+Use this for the link
+% link _posts/post.md %
 ```
 
 ### How to add a table

@@ -8,10 +8,15 @@ mermaid: true
 flowchart TD
     subgraph Basics [ ]
     B(Basics) --> B1(Command Line)
+    click B1 "https://endurotobi.github.io/posts/Wiki_Command_Line/"
     B --> B4(Git)
+    click B4 "https://endurotobi.github.io/posts/Wiki_Git/"
     B --> B2(Wiki)
+    click B2 "https://endurotobi.github.io/categories/wiki/"
     B --> B3(Web Presence)
+    click B3 "https://endurotobi.github.io"
     B2 --> B21(Github Pages)
+    click B21 "https://endurotobi.github.io"
     B3 --> B21
     end
 
