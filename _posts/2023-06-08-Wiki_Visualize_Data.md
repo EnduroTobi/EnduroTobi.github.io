@@ -140,6 +140,12 @@ plt.legend(['A','B'])
 plt.figure(figsize=(10,8))
 ```
 
+Set up a figure. The variable _f_ controlls the figure, _ax_ controlls the axes.
+
+```python
+f, ax = plt.subplots()
+```
+
 ```python
 plt.savefig('savedfigure.png')
 ```
@@ -217,6 +223,11 @@ sns.boxplot(data=df,x='column_1','column_2')
 
 ```python
 sns.violinplot(data=df,x='column_1','column_2')
+```
+
+Use the _split_ arguement for a better visualization when using the _hue_ argument.
+```python
+sns.violinplot(data=df,x='column_1','column_2',hue='column_3',split=True)
 ```
 
 ### Shapes of dataset distribution
@@ -299,6 +310,7 @@ Sequential Palettes go from a light color to a darker color. This is useful for 
 [Seaborn color palettes](https://seaborn.pydata.org/tutorial/color_palettes.html?highlight=color)
 
 Use Diverging Palettes are good for indicating both exremes, e.g. Temperature
+
 ```python
 sns.set()
 ```
