@@ -5,4 +5,8 @@ categories: [Wiki, Basics]
 tags: [python, jupyther, basics]
 ---
 
+[Official Jupyther Documentation](https://docs.jupyter.org/en/latest/)
 
+## Widgets
+
+Use [IPython widgets](https://ipywidgets.readthedocs.io/en/stable/).
